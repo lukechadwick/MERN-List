@@ -1,8 +1,21 @@
 {
   "name": "MERN-List",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "ssh://git@github.com/lukechadwick/MERN-List.git",
   "author": "<llukechadwick@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
 }
