@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 
 const items = require("./routes/api/items");
+const port = process.env.PORT || 5000;
 
 const app = express();
 
@@ -30,5 +31,4 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const port = process.env.port || 5000;
 app.listen(port, () => console.log(`Server started on port ${port}`));
