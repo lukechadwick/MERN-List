@@ -1,5 +1,10 @@
 import uuid from "uuid";
-import { GET_ITEMS, DELETE_ITEM, ADD_ITEM } from "../actions/types";
+import {
+  GET_ITEMS,
+  DELETE_ITEM,
+  ADD_ITEM,
+  ITEMS_LOADING
+} from "../actions/types";
 
 const initialState = {
   //Will come from backend
@@ -21,6 +26,11 @@ export default function(state = initialState, action) {
       return {
         ...state,
         items: [action.payload, ...state.items]
+      };
+    case ITEMS_LOADING:
+      return {
+        ...state,
+        loading: true
       };
 
     default:
