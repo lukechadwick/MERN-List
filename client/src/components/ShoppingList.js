@@ -6,7 +6,6 @@ import { getItems, deleteItem } from "../actions/ItemActions";
 
 import { Container, ListGroup, ListGroupItem, Button } from "reactstrap";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-import uuid from "uuid";
 
 class ShoppingList extends Component {
   componentDidMount = () => {
