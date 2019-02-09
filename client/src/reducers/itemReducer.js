@@ -3,12 +3,7 @@ import { GET_ITEMS, DELETE_ITEM, ADD_ITEM } from "../actions/types";
 
 const initialState = {
   //Will come from backend
-  items: [
-    { id: uuid(), name: "eggs" },
-    { id: uuid(), name: "milk" },
-    { id: uuid(), name: "water" },
-    { id: uuid(), name: "sugar" }
-  ]
+  items: []
 };
 
 export default function(state = initialState, action) {
